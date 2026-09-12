@@ -1,0 +1,8 @@
+/config.php
+/storage/*.sqlite
+/storage/*.sqlite-shm
+/storage/*.sqlite-wal
+/vendor/
+.DS_Store
+.idea/
+.vscode/
