@@ -1,0 +1,9 @@
+# Only public/ should be reachable. If your host will not let you point the
+# document root at public/, this sends everything there instead.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^$ public/ [L]
+    RewriteRule (.*) public/$1 [L]
+</IfModule>
+
+Options -Indexes
